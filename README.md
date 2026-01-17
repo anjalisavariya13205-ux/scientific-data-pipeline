@@ -1,5 +1,9 @@
 # Scalable Real-Time Scientific Data Pipeline
 
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![Kafka](https://img.shields.io/badge/Apache%20Kafka-3.6-orange.svg)
+![Status](https://img.shields.io/badge/Status-Active-success.svg)
+
 A real-time streaming data pipeline that simulates scientific event processing using Apache Kafka and Python.  
 This project demonstrates core data engineering concepts such as event streaming, real-time analytics, fault tolerance, and structured data storage.
 
@@ -9,50 +13,50 @@ This project demonstrates core data engineering concepts such as event streaming
 
 This project implements an end-to-end real-time data pipeline that:
 
-- Generates synthetic scientific event data  
-- Streams events through Apache Kafka  
-- Processes data in real time using Python consumers  
-- Applies filtering and anomaly detection logic  
-- Stores structured outputs for downstream analysis  
+- **Generates** synthetic scientific event data  
+- **Streams** events through Apache Kafka  
+- **Processes** data in real time using Python consumers  
+- **Applies** filtering and anomaly detection logic  
+- **Stores** structured outputs for downstream analysis  
 
 The focus of this project is **architecture, data flow, and engineering practices**, not domain-specific claims.
 
 ---
 
 ## 🏗️ System Architecture
-
-```text
+```
 ┌─────────────────────┐      ┌──────────────────┐      ┌─────────────────────┐
 │  Data Generator     │─────▶│   Apache Kafka   │─────▶│  Analytics Engine   │
 │  (Python Producer)  │      │  (Message Queue) │      │  (Python Consumer)  │
 └─────────────────────┘      └──────────────────┘      └─────────────────────┘
        Event creation           Fault-tolerant              Real-time filtering
        & serialization          event streaming             & analytics
-                                                             │
-                                                             ▼
-                                                     ┌─────────────────┐
-                                                     │  Output Files   │
-                                                     │   (CSV / JSON)  │
-                                                     └─────────────────┘
-Key Features
+                                                                    │
+                                                                    ▼
+                                                            ┌─────────────────┐
+                                                            │  Output Files   │
+                                                            │   (CSV / JSON)  │
+                                                            └─────────────────┘
+```
 
-✅ Real-time event streaming using Kafka
+---
 
-✅ Producer–consumer architecture
+## ✨ Key Features
 
-✅ Fault-tolerant message handling
+- ✅ **Real-time event streaming** using Kafka
+- ✅ **Producer–consumer architecture**
+- ✅ **Fault-tolerant message handling**
+- ✅ **Event filtering** based on configurable thresholds
+- ✅ **Anomaly flagging** for rare events
+- ✅ **Periodic aggregation** and statistics reporting
+- ✅ **Automatic persistence** of processed data
 
-✅ Event filtering based on configurable thresholds
+---
 
-✅ Anomaly flagging for rare events
-
-✅ Periodic aggregation and statistics reporting
-
-✅ Automatic persistence of processed data
-
-📊 Event Data Schema
+## 📊 Event Data Schema
 
 Each event follows a structured format:
+```json
 {
   "event_id": 123456,
   "timestamp": "2026-01-16T10:23:45.123456",
@@ -64,7 +68,12 @@ Each event follows a structured format:
   "detector_id": "DET_001",
   "is_anomaly": false
 }
-📁 Project Structure
+```
+
+---
+
+## 📁 Project Structure
+```
 Kafka_Spark_Pipeline/
 │
 ├── data/
@@ -86,83 +95,103 @@ Kafka_Spark_Pipeline/
 ├── README.md
 ├── requirements.txt
 └── .gitignore
-🚀 Setup & Execution
-Prerequisites
+```
 
-Python 3.8+
+---
 
-Java 11+
+## 🚀 Setup & Execution
 
-Apache Kafka 3.6+
+### Prerequisites
 
-Install Dependencies
+- Python 3.8+
+- Java 11+
+- Apache Kafka 3.6+
+
+### Install Dependencies
+```bash
 pip install kafka-python pandas
-Start Kafka Services
-# Zookeeper
+```
+
+### Start Kafka Services
+
+**Zookeeper:**
+```bash
 bin\windows\zookeeper-server-start.bat config\zookeeper.properties
+```
 
-# Kafka Broker
+**Kafka Broker:**
+```bash
 bin\windows\kafka-server-start.bat config\server.properties
+```
 
-Create Topic
+### Create Topic
+```bash
 bin\windows\kafka-topics.bat --create --topic particle-events --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
+```
 
-Run the Pipeline
+### Run the Pipeline
+
+**Start Data Generator:**
+```bash
 python src/data_generator.py
-python src/kafka_consumer_advanced.py
+```
 
-📈 Output
+**Start Analytics Consumer:**
+```bash
+python src/kafka_consumer_advanced.py
+```
+
+---
+
+## 📈 Output
 
 The pipeline generates:
 
-Final combined dataset (all_events_final.csv)
-
-Filtered high-energy events
-
-Anomaly records
-
-Periodic statistics summaries
+- **Final combined dataset** (`all_events_final.csv`)
+- **Filtered high-energy events**
+- **Anomaly records**
+- **Periodic statistics summaries**
 
 A Jupyter notebook is included to quickly inspect and validate results.
 
-🎯 Learning Outcomes
+---
+
+## 🎯 Learning Outcomes
 
 This project demonstrates:
 
-Event-driven system design
+- Event-driven system design
+- Real-time data ingestion pipelines
+- Kafka-based messaging patterns
+- Python-based stream analytics
+- Data validation and persistence
+- Clean project structuring for GitHub portfolios
 
-Real-time data ingestion pipelines
+---
 
-Kafka-based messaging patterns
+## 🔮 Future Improvements
 
-Python-based stream analytics
+- [ ] Spark-based distributed processing
+- [ ] Machine learning–based anomaly detection
+- [ ] Real-time dashboards
+- [ ] Dockerized deployment
+- [ ] Multi-broker Kafka setup
 
-Data validation and persistence
+---
 
-Clean project structuring for GitHub portfolios
+## 👤 Author
 
-🔮 Future Improvements
+**Anjali Savariya**  
+BCA (Big Data Analytics) Student | Aspiring Data Engineer
 
-Spark-based distributed processing
+[![GitHub](https://img.shields.io/badge/GitHub-anjalisavariya13205--ux-181717?logo=github)](https://github.com/anjalisavariya13205-ux)
 
-Machine learning–based anomaly detection
+---
 
-Real-time dashboards
-
-Dockerized deployment
-
-Multi-broker Kafka setup
-
-👤 Author
-
-Anjali Savariya
-BCA (Big Data Analytics) Student
-Aspiring Data Engineer
-
-GitHub: https://github.com/anjalisavariya13205-ux
-
-📄 License
+## 📄 License
 
 MIT License — free to use for learning and experimentation.
 
-⭐ If you find this project useful, feel free to star the repository.
+---
+
+⭐ **If this project helped you learn, please star this repository!**
