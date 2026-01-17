@@ -1,26 +1,27 @@
-Scalable Real-Time Scientific Data Pipeline
+# Scalable Real-Time Scientific Data Pipeline
 
-
-A real-time streaming data pipeline that simulates scientific event processing using Apache Kafka and Python.
+A real-time streaming data pipeline that simulates scientific event processing using Apache Kafka and Python.  
 This project demonstrates core data engineering concepts such as event streaming, real-time analytics, fault tolerance, and structured data storage.
 
-📌 Project Summary
+---
+
+## 📌 Project Summary
 
 This project implements an end-to-end real-time data pipeline that:
 
-Generates synthetic scientific event data
+- Generates synthetic scientific event data  
+- Streams events through Apache Kafka  
+- Processes data in real time using Python consumers  
+- Applies filtering and anomaly detection logic  
+- Stores structured outputs for downstream analysis  
 
-Streams events through Apache Kafka
+The focus of this project is **architecture, data flow, and engineering practices**, not domain-specific claims.
 
-Processes data in real time using Python consumers
+---
 
-Applies filtering and anomaly detection logic
+## 🏗️ System Architecture
 
-Stores structured outputs for downstream analysis
-
-The focus of this project is architecture, data flow, and engineering practices, not domain-specific claims.
-
-🏗️ System Architecture
+```text
 ┌─────────────────────┐      ┌──────────────────┐      ┌─────────────────────┐
 │  Data Generator     │─────▶│   Apache Kafka   │─────▶│  Analytics Engine   │
 │  (Python Producer)  │      │  (Message Queue) │      │  (Python Consumer)  │
@@ -33,8 +34,7 @@ The focus of this project is architecture, data flow, and engineering practices,
                                                      │  Output Files   │
                                                      │   (CSV / JSON)  │
                                                      └─────────────────┘
-
-✨ Key Features
+Key Features
 
 ✅ Real-time event streaming using Kafka
 
@@ -53,7 +53,6 @@ The focus of this project is architecture, data flow, and engineering practices,
 📊 Event Data Schema
 
 Each event follows a structured format:
-
 {
   "event_id": 123456,
   "timestamp": "2026-01-16T10:23:45.123456",
@@ -65,7 +64,6 @@ Each event follows a structured format:
   "detector_id": "DET_001",
   "is_anomaly": false
 }
-
 📁 Project Structure
 Kafka_Spark_Pipeline/
 │
@@ -88,7 +86,6 @@ Kafka_Spark_Pipeline/
 ├── README.md
 ├── requirements.txt
 └── .gitignore
-
 🚀 Setup & Execution
 Prerequisites
 
@@ -100,7 +97,6 @@ Apache Kafka 3.6+
 
 Install Dependencies
 pip install kafka-python pandas
-
 Start Kafka Services
 # Zookeeper
 bin\windows\zookeeper-server-start.bat config\zookeeper.properties
