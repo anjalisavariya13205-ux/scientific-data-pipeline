@@ -1,10 +1,6 @@
 Scalable Real-Time Scientific Data Pipeline
 
 
-
-
-
-
 A real-time streaming data pipeline that simulates scientific event processing using Apache Kafka and Python.
 This project demonstrates core data engineering concepts such as event streaming, real-time analytics, fault tolerance, and structured data storage.
 
