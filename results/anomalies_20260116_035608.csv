@@ -1,0 +1,5 @@
+event_id,timestamp,particle_type,energy_gev,momentum_x,momentum_y,momentum_z,detector_id,is_anomaly
+6613010,2026-01-16T11:55:59.691907,electron,626.68,-54.86,475.4,-242.07,DET_003,True
+7769002,2026-01-16T11:56:01.116181,electron,425.16,-113.8,216.14,-245.55,DET_003,True
+1713843,2026-01-16T11:56:03.857150,proton,923.47,195.85,193.17,-405.21,DET_002,True
+9189705,2026-01-16T11:56:07.007387,electron,438.72,169.49,-413.74,-433.36,DET_001,True

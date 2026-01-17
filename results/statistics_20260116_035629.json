@@ -1,0 +1,16 @@
+{
+  "total_events": 300,
+  "high_energy_count": 267,
+  "anomaly_count": 19,
+  "particle_distribution": {
+    "proton": 74,
+    "electron": 79,
+    "muon": 76,
+    "photon": 71
+  },
+  "detector_distribution": {
+    "DET_003": 107,
+    "DET_001": 91,
+    "DET_002": 102
+  }
+}
