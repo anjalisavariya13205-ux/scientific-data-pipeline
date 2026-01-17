@@ -7,8 +7,6 @@
 A real-time streaming data pipeline that simulates scientific event processing using Apache Kafka and Python.  
 This project demonstrates core data engineering concepts such as event streaming, real-time analytics, fault tolerance, and structured data storage.
 
----
-
 ## 📌 Project Summary
 
 This project implements an end-to-end real-time data pipeline that:
@@ -20,8 +18,6 @@ This project implements an end-to-end real-time data pipeline that:
 - **Stores** structured outputs for downstream analysis  
 
 The focus of this project is **architecture, data flow, and engineering practices**, not domain-specific claims.
-
----
 
 ## 🏗️ System Architecture
 ```
@@ -39,8 +35,6 @@ The focus of this project is **architecture, data flow, and engineering practice
                                                             └─────────────────┘
 ```
 
----
-
 ## ✨ Key Features
 
 - ✅ **Real-time event streaming** using Kafka
@@ -50,8 +44,6 @@ The focus of this project is **architecture, data flow, and engineering practice
 - ✅ **Anomaly flagging** for rare events
 - ✅ **Periodic aggregation** and statistics reporting
 - ✅ **Automatic persistence** of processed data
-
----
 
 ## 📊 Event Data Schema
 
@@ -69,8 +61,6 @@ Each event follows a structured format:
   "is_anomaly": false
 }
 ```
-
----
 
 ## 📁 Project Structure
 ```
@@ -96,8 +86,6 @@ Kafka_Spark_Pipeline/
 ├── requirements.txt
 └── .gitignore
 ```
-
----
 
 ## 🚀 Setup & Execution
 
@@ -141,8 +129,6 @@ python src/data_generator.py
 python src/kafka_consumer_advanced.py
 ```
 
----
-
 ## 📈 Output
 
 The pipeline generates:
@@ -153,8 +139,6 @@ The pipeline generates:
 - **Periodic statistics summaries**
 
 A Jupyter notebook is included to quickly inspect and validate results.
-
----
 
 ## 🎯 Learning Outcomes
 
@@ -167,8 +151,6 @@ This project demonstrates:
 - Data validation and persistence
 - Clean project structuring for GitHub portfolios
 
----
-
 ## 🔮 Future Improvements
 
 - [ ] Spark-based distributed processing
@@ -177,8 +159,6 @@ This project demonstrates:
 - [ ] Dockerized deployment
 - [ ] Multi-broker Kafka setup
 
----
-
 ## 👤 Author
 
 **Anjali Savariya**  
@@ -186,12 +166,8 @@ BCA (Big Data Analytics) Student | Aspiring Data Engineer
 
 [![GitHub](https://img.shields.io/badge/GitHub-anjalisavariya13205--ux-181717?logo=github)](https://github.com/anjalisavariya13205-ux)
 
----
-
 ## 📄 License
 
 MIT License — free to use for learning and experimentation.
-
----
 
 ⭐ **If this project helped you learn, please star this repository!**
