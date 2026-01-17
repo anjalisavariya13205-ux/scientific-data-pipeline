@@ -7,7 +7,7 @@
 A real-time streaming data pipeline that simulates scientific event processing using Apache Kafka and Python.  
 This project demonstrates core data engineering concepts such as event streaming, real-time analytics, fault tolerance, and structured data storage.
 
-## 📌 Project Summary
+##  Project Summary
 
 This project implements an end-to-end real-time data pipeline that:
 
@@ -19,7 +19,7 @@ This project implements an end-to-end real-time data pipeline that:
 
 The focus of this project is **architecture, data flow, and engineering practices**, not domain-specific claims.
 
-## 🏗️ System Architecture
+##  System Architecture
 ```
 ┌─────────────────────┐      ┌──────────────────┐      ┌─────────────────────┐
 │  Data Generator     │─────▶│   Apache Kafka   │─────▶│  Analytics Engine   │
@@ -35,15 +35,15 @@ The focus of this project is **architecture, data flow, and engineering practice
                                                             └─────────────────┘
 ```
 
-## ✨ Key Features
+##  Key Features
 
-- ✅ **Real-time event streaming** using Kafka
-- ✅ **Producer–consumer architecture**
-- ✅ **Fault-tolerant message handling**
-- ✅ **Event filtering** based on configurable thresholds
-- ✅ **Anomaly flagging** for rare events
-- ✅ **Periodic aggregation** and statistics reporting
-- ✅ **Automatic persistence** of processed data
+-  **Real-time event streaming** using Kafka
+-  **Producer–consumer architecture**
+-  **Fault-tolerant message handling**
+-  **Event filtering** based on configurable thresholds
+-  **Anomaly flagging** for rare events
+-  **Periodic aggregation** and statistics reporting
+-  **Automatic persistence** of processed data
 
 ## 📊 Event Data Schema
 
@@ -87,7 +87,7 @@ Kafka_Spark_Pipeline/
 └── .gitignore
 ```
 
-## 🚀 Setup & Execution
+##  Setup & Execution
 
 ### Prerequisites
 
@@ -129,7 +129,7 @@ python src/data_generator.py
 python src/kafka_consumer_advanced.py
 ```
 
-## 📈 Output
+##  Output
 
 The pipeline generates:
 
@@ -140,7 +140,7 @@ The pipeline generates:
 
 A Jupyter notebook is included to quickly inspect and validate results.
 
-## 🎯 Learning Outcomes
+##  Learning Outcomes
 
 This project demonstrates:
 
@@ -151,7 +151,7 @@ This project demonstrates:
 - Data validation and persistence
 - Clean project structuring for GitHub portfolios
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 - [ ] Spark-based distributed processing
 - [ ] Machine learning–based anomaly detection
